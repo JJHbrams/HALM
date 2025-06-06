@@ -1,6 +1,6 @@
 import os, sys
 import json
-from core_module.llm_agnet import LLMAgent
+from core_module.llm_agent import LLMAgent
 
 ROOT = os.getcwd()
 
@@ -17,7 +17,7 @@ def main(config):
         print("=" * 10, end="\n")
 
         # TTS
-        llm_model.tts.speak(response)
+        # llm_model.tts.speak(response)
 
 
 if __name__ == "__main__":

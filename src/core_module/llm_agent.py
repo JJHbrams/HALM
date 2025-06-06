@@ -6,11 +6,6 @@ from langchain_ollama import OllamaLLM
 from voice_module.tts_agent import TTSAgent
 
 
-def linearize(str_lst):
-    res = "\n".join(str_lst)
-    return res
-
-
 class LLMAgent:
     def __init__(self, config):
         # configuration
@@ -25,7 +20,7 @@ class LLMAgent:
         self.model = OllamaLLM(model=self.config["LLM"]["model"])
 
         # TTS 설정
-        self.tts = TTSAgent(config)
+        # self.tts = TTSAgent(config)
 
         # system prompt
         self.system_though = (
