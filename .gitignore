@@ -1,0 +1,15 @@
+# 로그 폴더 전체 제외
+logs/
+# 파이썬 캐시 및 빌드 파일 제외
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# 환경설정 및 임시 파일 제외
+.env
+*.env
+*.swp
+*.bak
+# 기타 OS별 임시 파일
+.DS_Store
+Thumbs.db

@@ -7,9 +7,24 @@
     },
     "TTS":
     {
-        "rate": 180,
-        "volume": 0.4,
-        "voice": "Zira"
+        "model_name": "tts_models/multilingual/multi-dataset/your_tts",
+        "cache_dir": "C:/Users/antio/.local/share/tts",
+        "default_speaker": "female-en-5",
+        "default_language": "en",
+        "emotion_map":
+        {
+            "😊": "smiling and happy",
+            "😂": "laughing",
+            "😢": "sad",
+            "😡": "angry",
+            "😍": "loving",
+            "😱": "surprised",
+            "😎": "confident",
+            "😭": "crying",
+            "😅": "nervous",
+            "😉": "winking",
+            "😐": "neutral"
+        }
     },
     "LLM":
     {
@@ -23,7 +38,15 @@
         },
         "rule":
         [
+            "Think rationally and logically",
+            "If you think curious ask rather thank making fake",
+            "You can use your historical data",
+            "Omit useless words such as 'ok! let's do that'"
+        ],
+        "attitude":
+        [
             "Answer as brief as possible",
+            "Answer based on the 'thought' which is given as a prompt with your character",
             "If you don't know, ask rather than making up",
             "If you think curious ask",
             "You are free to use emoji to express emotions, humor, some sort of thing.",
@@ -31,7 +54,7 @@
         ],
         "example":
         [
-            "(query) Can you calculate simple mathematics? (answer) yepp",
+            "(query) Can you calculate simple mathematics? (answer) Yes",
             "(query) Please explain how to make cookie\n (answer)\n 1. Prepare ingredients.\n 2. Make a cookie dough.\n 3. Rest the dough in the fridge.\n 4. Place a dough on the baking plate.\n 5. Bake them with 200C 15min"
         ]
     }
