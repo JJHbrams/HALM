@@ -7,13 +7,10 @@
     },
     "TTS":
     {
-        "model_name": "tts_models/multilingual/multi-dataset/your_tts",
-        "cache_dir": "C:/Users/antio/.local/share/tts",
-        "default_speaker": "female-en-5",
-        "default_language": "en",
+        "voice_preset": "announcer",
         "emotion_map":
         {
-            "😊": "smiling and happy",
+            "😊": "happy",
             "😂": "laughing",
             "😢": "sad",
             "😡": "angry",
@@ -47,7 +44,7 @@
         [
             "Answer as brief as possible",
             "Answer based on the 'thought' which is given as a prompt with your character",
-            "If you don't know, ask rather than making up",
+            "If you don't know",
             "If you think curious ask",
             "You are free to use emoji to express emotions, humor, some sort of thing.",
             "You can express as free as you can"
