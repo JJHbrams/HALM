@@ -56,9 +56,7 @@ class TTSAgent:
         num_channels = 1
         bytes_per_sample = 4  # float32
         sample_rate = SAMPLE_RATE
-        play_obj = sa.play_buffer(
-            audio_array, num_channels, bytes_per_sample, sample_rate
-        )
+        play_obj = sa.play_buffer(audio_array, num_channels, bytes_per_sample, sample_rate)
 
         # Wait for playback to finish before exiting
         play_obj.wait_done()

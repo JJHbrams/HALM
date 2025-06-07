@@ -23,7 +23,7 @@ class LLMAgent:
         self.model = OllamaLLM(model=self.config["LLM"]["model"])
 
         # TTS 설정
-        self.tts = TTSAgent(config)
+        # self.tts = TTSAgent(config)
 
         # system prompt
         self.system_though = (
